@@ -34,9 +34,9 @@ backed his/her projects, etc?
 - .most_backers
   - returns the project with the highest number of backers
 
-#### Pledge
+<!-- #### Pledge
 
 - #project
   - returns the project associated with a particular pledge
 - #user
-  - returns the user associated with a particular pledge
+  - returns the user associated with a particular pledge -->
