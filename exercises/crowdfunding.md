@@ -18,21 +18,21 @@ backed his/her projects, etc?
 
 #### User
 
-- .highest_pledge
-  - returns the user who has made the highest pledge
-- .multi_pledger
-  - returns all users who have pledged to multiple projects
+<!-- - .highest_pledge
+  - returns the user who has made the highest pledge -->
+<!-- - .multi_pledger
+  - returns all users who have pledged to multiple projects -->
 - .project_creator
   - returns all users who have created a project
 
 #### Project
 
-- .no_pledges
-  - returns all projects which have no pledges yet
-- .above_goal
-  - returns all projects which have met or exceeded their pledge goal
-- .most_backers
-  - returns the project with the highest number of backers
+<!-- - .no_pledges
+  - returns all projects which have no pledges yet -->
+<!-- - .above_goal
+  - returns all projects which have met or exceeded their pledge goal -->
+<!-- - .most_backers
+  - returns the project with the highest number of backers -->
 
 <!-- #### Pledge
 

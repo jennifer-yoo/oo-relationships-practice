@@ -6,13 +6,16 @@ class Pledge
         @project = project
         @user = user
         @amount = amount
+        project.add_amount(amount)
+        project.add_count
+        user.add_pledge_counter
         @@all << self
-        project.pledge_amount += amount
-        project.pledge_count += 1
     end
 
     def self.all
         @@all
     end
+
+
 
 end
