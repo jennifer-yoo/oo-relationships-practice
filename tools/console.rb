@@ -4,29 +4,99 @@ def reload
   load 'config/environment.rb'
 end
 
-jenn = User.new("Jenn")
-ian = User.new("Ian")
-brian = User.new("Brian")
-sam = User.new("Sam")
-billy = User.new("Billy")
-mary = User.new("Mary")
-amit = User.new("Amit")
+queens = Location.new("Queens")
+westchester = Location.new("Westchester")
+brooklyn = Location.new("Brooklyn")
 
-p1 = Project.new("project1", jenn, 100)
-p2 = Project.new("project2", ian, 1000)
-p3 = Project.new("project3", brian, 500)
-p4 = Project.new("project4", sam, 250)
-p5 = Project.new("project5", billy, 8000)
+ian = Trainer.new("Ian")
+brian = Trainer.new("Brian")
+vincent = Trainer.new("Vincent")
 
-pled1 = Pledge.new(p1, ian, 500)
-pled2 = Pledge.new(p1, jenn, 20)
-pled3 = Pledge.new(p4, billy, 10)
-pled4 = Pledge.new(p4, amit, 25)
-pled5 = Pledge.new(p2, brian, 50)
-pled6 = Pledge.new(p3, sam, 1000)
-pled7 = Pledge.new(p2, sam, 200)
-pled8 = Pledge.new(p1, amit, 20)
-pled9 = Pledge.new(p3, sam, 25)
+jenn = Client.new("Jenn", ian)
+ryan = Client.new("Ryan", brian)
+bill = Client.new("Bill", ian)
+tim = Client.new("Tim", vincent)
+rob = Client.new("Rob", ian)
+
+s1 = Session.new(queens, ian, "session1")
+s2 = Session.new(queens, brian, "session2")
+s3 = Session.new(brooklyn, vincent, "session3")
+s4 = Session.new(queens, vincent, "session4")
+s5 = Session.new(westchester, ian, "session5")
+s6 = Session.new(queens, brian, "session6")
+
+
+
+
+
+
+# #movie actors
+# meryl = Actor.new("Meryl Streep")
+# liam = Actor.new("Liam Neeson")
+# tom = Actor.new("Tom Hanks")
+# leo = Actor.new("Leonardo DiCaprio")
+# robert = Actor.new("Robert Downey Junior")
+# chris_evans = Actor.new("Chris Evans")
+# murphy = Actor.new("Eddie Murphy")
+
+# #show actors
+# grant = Actor.new("Grant Gustin")
+# candice = Actor.new("Candice Patton")
+# cranston = Actor.new("Brian Cranston")
+# carell = Actor.new("Steve Carell")
+
+
+# #movie characters
+# dad = Character.new("Dad", liam)
+# forest = Character.new("Forest Gump", tom)
+# wilson = Character.new("Wilson", tom,)
+# miranda = Character.new("Miranda", meryl)
+# leos_character = Character.new("Leo's Character", leo)
+# tony_stark = Character.new("Tony Stark", robert)
+# steve_rogers = Character.new("Steve Rogers", chris_evans)
+# sherman = Character.new("Sherman Klump", murphy)
+# buddy = Character.new("Buddy Love", murphy)
+# papa = Character.new("Papa Klump", murphy)
+
+# #show characters
+# barry_allen = Character.new("Barry Allen", grant)
+# iris_west = Character.new("Iris West-Allen", candice)
+# walter_white = Character.new("Walter White", cranston)
+# michael_scott = Character.new("Michael Scott", carell)
+
+# a1 = Appearance.new(barry_allen)
+# a2 = Appearance.new(iris_west)
+# a3 = Appearance.new(tony_stark)
+# a4 = Appearance.new(steve_rogers)
+# a5 = Appearance.new(wilson)
+# a6 = Appearance.new(tony_stark)
+# a7 = Appearance.new(tony_stark)
+# a8 = Appearance.new(tony_stark)
+# a9 = Appearance.new(tony_stark)
+# a10 = Appearance.new(papa)
+# a11 = Appearance.new(sherman)
+# a12 = Appearance.new(buddy)
+
+
+# #movies
+# castaway = Movie.new("Castaway", )
+# forest_gump = Movie.new("Forest Gump")
+# prada = Movie.new("The Devil Wears Prada")
+# taken = Movie.new("Taken")
+# inception = Movie.new("Inception")
+# avengers = Movie.new("The Avengers")
+# iron_man = Movie.new("Iron Man")
+# iron_man_2 = Movie.new("Iron Man 2")
+# iron_man_3 = Movie.new("Iron Man 3")
+# spider_man = Movie.new("Homecoming")
+# captain_america = Movie.new("Captain America")
+# the_flash_movie = Movie.new("The Flash")
+# nutty_professor = Movie.new("The Nutty Professor")
+
+# #shows
+# office = Show.new("The Office")
+# flash = Show.new("The Flash")
+# bad = Show.new("Breaking Bad")
 
 
 binding.pry
